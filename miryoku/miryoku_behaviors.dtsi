@@ -23,5 +23,19 @@
       tapping-term-ms = <U_TAPPING_TERM>;
       bindings = <&mt RGUI SEMI>, <&kp SQT>;
     };
+    d_semi_sqt: d_semi_sqt {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        tapping-term-ms = <U_TAPPING_TERM>;
+        bindings = <&kp SEMI>, <&kp SQT>;
+    };
+    htd_lgui_dtap: htd_lgui_dtap {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <U_TAPPING_TERM>;
+        quick-tap-ms = <U_TAPPING_TERM>;
+        bindings = <&kp RGUI>, <&d_semi_sqt>;
+    };
   };
 };
