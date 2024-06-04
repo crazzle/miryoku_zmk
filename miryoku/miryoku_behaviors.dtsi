@@ -19,9 +19,8 @@
     };
     d_tap: d_tap {
         compatible = "zmk,behavior-tap-dance";
-        #binding-cells = <0>;
         tapping-term-ms = <U_TAPPING_TERM>;
-        bindings = <&kp>, <&kp>;
+        bindings = <&mt RSHIFT SEMI>, <&kp SQT>;
     };
   };
 };
