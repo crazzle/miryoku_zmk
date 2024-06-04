@@ -35,7 +35,7 @@
         flavor = "tap-preferred";
         tapping-term-ms = <U_TAPPING_TERM>;
         quick-tap-ms = <U_TAPPING_TERM>;
-        bindings = <&kp RGUI>, <&d_semi_sqt>;
+        bindings = <&kp>, <&d_semi_sqt>;
     };
   };
 };
